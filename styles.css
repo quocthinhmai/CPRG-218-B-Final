@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overscroll-behavior: none;
+}
+
+/* header section */
+header{
+    padding: 0 0 0.5rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header nav{
+    padding: 2rem;
+    width: 100%;
+}
+
+header nav img{
+    width: 50%;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:0.25rem;
+}
+
+nav ul li a{
+    background-color: #246095;
+    display:block;
+    text-align:center;
+    margin: auto;
+    padding: 1rem;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 120%;
+}
+
+nav li a:hover{
+    background-color: #171a27;
+    color: white;
+}
+
+.weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+/* hero section */
+.hero{
+    padding: 1rem;
+    width: 100%;
+    height: 70vh;
+    background-image: url("/Media/hero_image.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display:flex;
+    align-items:center;
+}
+.hero .textcontent {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    text-align: center;
+}
+.content{
+    border: solid 1px;
+    margin: 0;
+    display: grid;
+    align-items: center;
+}
+.paradise {
+    margin: 1rem;
+    color: #333;
+    text-align: center;
+    gap:1rem;
+}
+
+/* Enforgetable Moment in Homepage */
+#moment{
+    margin: 1rem;
+    gap:1rem;
+    place-items: center;
+    text-align: center;
+}
+.gallerycontainer{
+    margin-top: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.gallery{
+    height: 100%;
+    margin: 0;
+    background-color: #246095;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.gallery figcaption{
+    padding: 1rem;
+}
+.gallery h3{
+    color: white;
+}
+.gallery p{
+    color: white;
+}
+
+/* Accomodation Homepage */
+#home{
+    margin: 1rem;
+    gap:1rem;
+    place-items: center;
+    text-align: center;
+}
+.homecontainer{
+    margin-top: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#home button{
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 50%;
+}
+
+/* Testimonial Homepage */
+#testimonial{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.reviewgrid{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 1rem;
+}
+.review {
+    margin: 0;
+    height: 100%;
+    border: 2px solid #246095;
+}
+.review h3{
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+.review p {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.calltoaction{
+    padding: 1rem;
+    width: 100%;
+    background-color: #c27017;
+    color: #ffffff;
+    border: none;
+    font-size: 100%;
+}
+.calltoaction:hover{
+    background-color: #246095;
+    color: white;
+}
+
+@media only screen and (min-width:768px){
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+    }
+    header nav img {
+        margin: 0 1rem;
+        width: 20%;
+        height: auto;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul li a{
+        background-color: white;
+        color: #333;
+        font-size: 100%;
+    }
+    .weather{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    header{
+        justify-content: space-between;
+        align-items:center;
+        gap:1rem;
+        padding: 1rem 2.5rem;
+    }
+    #moment .gallerycontainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #home .homecontainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #home .homecontainer :first-child {
+        grid-column: span 2;
+        width: 100%;
+    }
+    #home .homecontainer :first-child img{
+        object-fit: cover;
+    }
+    #testimonial .reviewgrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #testimonial h2 {
+        grid-column: span 2;
+    }
+    #testimonial a {
+        grid-column: span 1;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #moment .gallerycontainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+    #home .homecontainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #home .homecontainer :first-child {
+        grid-column: span 1;
+        width: 100%;
+    }
+}
