@@ -190,6 +190,26 @@ nav li a:hover{
     color: white;
 }
 
+/* Footer */
+footer{
+    background-color: #333;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer img{
+    width: 30%;
+    margin: 1rem;
+}
+
+footer p{
+    color: white;
+}
+
 @media only screen and (min-width:768px){
     header nav {
         width: 100%;
