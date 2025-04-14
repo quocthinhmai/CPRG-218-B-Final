@@ -1,0 +1,110 @@
+/* hero section */
+.hero{
+    padding: 1rem;
+    width: 100%;
+    height: 70vh;
+    background-image: url("/Media/beach-swing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display:flex;
+    align-items:center;
+}
+.hero .textcontent {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    text-align: center;
+}
+
+/* Relaxation and Adventure part */
+#relaxation, #adventure{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    width: 100%;
+    display: flex;
+}
+
+figcaption{
+    margin-top: 1rem;
+}
+
+/* Local Excursions */
+#local{
+    margin: auto;
+    width: 95%;
+}
+#local h2{
+    text-align: center;
+}
+#local .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+#local .localstuffs{
+    background-color: #246095;
+    color: white;
+    margin: 0;
+    padding: 1.5rem 1.5rem 1.5rem 2rem ;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Booking information */
+#booking{
+    margin: auto;
+    width: 90%;
+}
+#booking h2{
+    text-align: center;
+}
+.bookinfo{
+    margin-top: 1rem;
+    height: 100%;
+    border: 2px solid #246095;
+    padding: 2rem;
+}
+#booking .bookinfo ul li {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:768px){
+    #relaxation, #adventure {
+        display: flex;
+    }
+    #adventure figure{
+        flex-direction: row-reverse;
+    }
+    figure {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #relaxation figure img{
+        width: 50%;
+        padding: 0 2rem 0 0;
+    }
+    #adventure figure img{
+        width: 50%;
+        padding: 0 0 0 2rem;
+    }
+    figure figcaption{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:1000px){
+    #local .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
