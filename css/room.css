@@ -1,0 +1,75 @@
+/* hero section */
+.hero{
+    padding: 1rem;
+    width: 100%;
+    height: 70vh;
+    background-image: url("/Media/beach-swing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display:flex;
+    align-items:center;
+}
+.hero .textcontent {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    text-align: center;
+}
+
+/* Room Information Section */
+
+#roominfo{
+    margin: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.room{
+    height: 100%;
+    margin: 0;
+    background-color: #246095;
+}
+
+.room img{
+    width: 100%;
+    height: auto;
+}
+
+.room figcaption{
+    padding:  1.5rem;
+    color: white;
+    gap:1rem;
+}
+
+.room figcaption p{
+    margin-top: 1rem;
+}
+
+.room figcaption ul{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+@media only screen and (min-width:768px){
+    #roominfo{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #roominfo :last-child{
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    #roominfo{
+        grid-template-columns: repeat(3,1fr);
+        border: solid 1px red;
+    }
+    #roominfo :nth-child(4){
+        grid-column: span 1;
+    }
+}
