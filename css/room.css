@@ -67,7 +67,6 @@
 @media only screen and (min-width:1000px){
     #roominfo{
         grid-template-columns: repeat(3,1fr);
-        border: solid 1px red;
     }
     #roominfo :nth-child(4){
         grid-column: span 1;
