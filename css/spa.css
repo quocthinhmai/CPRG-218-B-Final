@@ -3,7 +3,7 @@
     padding: 1rem;
     width: 100%;
     height: 70vh;
-    background-image: url("/CPRG-218-B-Final/Media/Media/bedroom-door-entrance-271639.jpg");
+    background-image: url("/CPRG-218-B-Final/Media/pexels-olly-3757657-header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,56 +20,63 @@
     text-align: center;
 }
 
-/* Room Information Section */
-
-#roominfo{
+/* Menu section */
+#spamenu{
     margin: 1rem;
     gap: 1rem;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.room{
+.spagrid, .gridnodescription{
     height: 100%;
     margin: 0;
+    border: solid 1px #246095;
+}
+
+h2{
+    text-align: center;
     background-color: #246095;
-}
-
-.room img{
-    width: 100%;
-    height: auto;
-}
-
-.room figcaption{
-    padding:  1.5rem;
     color: white;
-    gap:1rem;
+    padding: 1rem;
 }
-
-.room figcaption p{
-    margin-top: 1rem;
+.spagrid ul { 
+    padding: 1rem;
+    margin: 1rem;
 }
-
-.room figcaption ul{
-    margin-top: 1rem;
+.gridnodescription ul{
     margin-left: 1rem;
+}
+.gridnodescription ul li{
+    padding: 1rem;
+    margin: 1rem;
+}
+.gridnodescription:last-child ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+.gridnodescription:last-child h2{
+    text-align: center;
+    list-style-type: none;
+    background-color: #c27017;
 }
 
 @media only screen and (min-width:768px){
-    #roominfo{
+    #spamenu{
         grid-template-columns: repeat(2,1fr);
     }
-    #roominfo :last-child{
+    .gridnodescription:last-child{
         grid-column: span 2;
+        text-align: center;
     }
 }
-
 @media only screen and (min-width:1000px){
-    #roominfo{
+    #spamenu{
         grid-template-columns: repeat(3,1fr);
-        border: solid 1px red;
     }
-    #roominfo :nth-child(4){
-        grid-column: span 1;
+    .gridnodescription:last-child{
+        grid-column: span 3;
+        text-align: center;
     }
 }

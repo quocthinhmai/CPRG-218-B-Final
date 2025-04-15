@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/spa.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Media/Logo_dark.png" alt="Shangri La Logo in dark color">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="room.html">Room</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Spa</a></li>
+            </ul>   
+            <div class="weather">
+                <p>Cancun</p>
+               <p id="temperature"></p> 
+               <p id="feelslike"></p>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="textcontent">
+                <h1>The Serenity Sanctuary - Spa Services & Price List</h1>
+            </div>
+        </section>
+
+        <section id="spamenu">
+            <div class="spagrid">
+                <h2>Massages</h2>
+                <ul>
+                    <li>Shangri La Signature Massage (90 minutes): $250</li>
+                        <ul>
+                            <li>A customized massage using a blend of techniques to release tension and promote deep relaxation.</li>
+                        </ul>
+                    <li>Deep Tissue Massage (60 minutes / 90 minutes): $180 / $260</li>
+                        <ul>
+                            <li>Targeted massage to relieve chronic muscle tension and pain.</li>
+                        </ul>
+                    <li>Hot Stone Massage (75 minutes): $220</li>
+                        <ul>
+                            <li>Soothing massage using warm basalt stones to melt away stress and improve circulation.</li>
+                        </ul>
+                    <li>Aromatherapy Massage (60 minutes): $190</li>
+                        <ul>
+                            <li>Relaxing massage using essential oils to enhance mood and well-being.</li>
+                        </ul>
+                    <li>Swedish Massage (60 minutes / 90 minutes): $170 / $240</li>
+                        <ul>
+                            <li>A classic relaxation massage.</li>
+                        </ul>
+                    <li>Couples Massage (60 Minutes): $350 (per couple)</li>
+                        <ul>
+                            <li>Relax with a partner in a private room.</li>
+                        </ul>
+                </ul>
+            </div>
+
+            <div class="spagrid">
+                <h2>Facials</h2>
+                <ul>
+                    <li>Shangri La Radiance Facial (75 minutes): $210</li>
+                        <ul>
+                            <li>A luxurious facial tailored to your skin type, leaving your complexion glowing.</li>
+                        </ul>
+                    <li>Hydrating Facial (60 minutes): $180</li>
+                        <ul>
+                            <li>Deeply nourishing facial to replenish moisture and restore skin's vitality.</li>
+                        </ul>
+                    <li>Anti-Aging Facial (90 minutes): $270</li>
+                        <ul>
+                            <li>Advanced facial treatment to reduce fine lines and wrinkles.</li>
+                        </ul>
+                    <li>Aromatherapy Massage (60 minutes): $190</li>
+                        <ul>
+                            <li>Relaxing massage using essential oils to enhance mood and well-being.</li>
+                        </ul>
+                    <li>Purifying Facial (60 minutes): $160</li>
+                        <ul>
+                            <li>Cleansing facial designed to remove impurities and leave a fresh feeling.</li>
+                        </ul>
+                </ul>
+            </div>
+
+            <div class="spagrid">
+                <h2>Body Treatments</h2>
+                <ul>
+                    <li>Sea Salt Body Scrub (45 minutes): $150</li>
+                        <ul>
+                            <li>Exfoliating treatment to remove dead skin cells and reveal smoother skin.</li>
+                        </ul>
+                    <li>Tropical Body Wrap (60 minutes): $200</li>
+                        <ul>
+                            <li>Hydrating and nourishing body wrap using natural ingredients.</li>
+                        </ul>
+                    <li>Sun Relief Wrap (60 Minutes): $170</li>
+                        <ul>
+                            <li>○	Soothing treatment to cool and hydrate skin after sun exposure.</li>
+                        </ul>
+                </ul>
+            </div>
+
+            <div class="gridnodescription">
+                <h2>Manicures & Pedicures</h2>
+                <ul>
+                    <li>Shangri La Deluxe Manicure (60 minutes): $90</li>                      
+                    <li>Shangri La Deluxe Pedicure (75 minutes): $110</li>
+                    <li>Classic Manicure (45 minutes): $70</li>
+                    <li>Classic Pedicure (60 minutes): $90</li>
+                </ul>
+            </div>
+
+            <div class="gridnodescription">
+                <h2>Enhancements (Add-ons)</h2>
+                <ul>
+                    <li>Scalp Massage (15 minutes): $40</li>                      
+                    <li>Eye Treatment (15 minutes): $35</li>
+                    <li>Foot Reflexology (15 minutes): $40</li>
+                </ul>
+            </div>
+
+            <div class="gridnodescription">
+                <h2>Wellness Programs</h2>
+                <ul>
+                    <li>Yoga Session (60 minutes): $50 (Group), $120 (Private)</li>                      
+                    <li>Meditation Session (30 minutes): $40 (Group), $100 (Private)</li>
+                </ul>
+            </div>
+
+            <div class="gridnodescription">
+                <h2>Important Notes</h2>
+                <ul>
+                    <li>Prices are subject to change without notice.</li>
+                    <li>Reservations are highly recommended.</li>
+                    <li>Please arrive 15 minutes prior to your scheduled appointment.</li>
+                    <li>A 24-hour cancellation policy applies.</li>
+                    <li>Gratuity not included.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="Media/Logo_white.png" alt="Shangri La logo in white color">
+        <p>© Shangri La Beach Resort. All rights reserved.</p>
+    </footer>
+    <script src="weather.js"></script>
+</body>
+</html>
