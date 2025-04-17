@@ -22,35 +22,33 @@
 
 #dining{
     margin: 2rem;
-    place-items: center;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap:1rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-#dining figure{
+.dininggrid{
+    height: 100%;
+    margin: 0;
     background-color: #246095;
-    gap: 1rem;
-    margin-bottom: 1rem;
 }
 
-#dining img{
+.dininggrid img{
     width: 100%;
     height: auto;
 }
-#dining h2{
+.dininggrid h2{
     margin-bottom: 1rem;
 }
-#dining p{
+.dininggrid p{
     margin-bottom: 1rem;
 }
-#dining figcaption{
+.dininggrid figcaption{
     padding:  1.5rem;
     color: white;
     gap: 1rem;
 }
-#dining figcaption ul li{
+.dininggrid figcaption ul li{
     list-style-type: none;
 }
 
@@ -65,7 +63,19 @@
 }
 
 @media only screen and (min-width:768px){
-    #dining figure {
-        width: calc(50% - 0.5rem);    
+    #dining{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #dining :last-child{
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    #dining{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #dining :last-child{
+        grid-column: span 1;
     }
 }
