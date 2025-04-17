@@ -1,4 +1,4 @@
-# Final-Project - Kevin Mai
+# Final Project - Kevin Mai
 ### Attribution
 
 All CSS, JS, and HTML content was created by Kevin Mai
