@@ -3,7 +3,7 @@
     padding: 1rem;
     width: 100%;
     height: 70vh;
-    background-image: url('/CPRG-218-B-Final//Media/hero_image.webp');
+    background-image: url('/Media/ishan-seefromthesky-gtt803WswnA-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,4 +18,54 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 250%;
     text-align: center;
+}
+
+#dining{
+    margin: 2rem;
+    place-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+#dining figure{
+    background-color: #246095;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#dining img{
+    width: 100%;
+    height: auto;
+}
+#dining h2{
+    margin-bottom: 1rem;
+}
+#dining p{
+    margin-bottom: 1rem;
+}
+#dining figcaption{
+    padding:  1.5rem;
+    color: white;
+    gap: 1rem;
+}
+#dining figcaption ul li{
+    list-style-type: none;
+}
+
+#other{
+    border: solid #246095 2px;
+    margin: 2rem;
+    text-align: left;
+    padding: 2rem;
+}
+#other h2{
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:768px){
+    #dining figure {
+        width: calc(50% - 0.5rem);    
+    }
 }

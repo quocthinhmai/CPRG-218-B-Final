@@ -60,6 +60,10 @@ nav li a:hover{
     margin: 1rem 0 0 0;
 }
 
+.weather p{
+    margin-right: 1rem;
+}
+
 /* Footer */
 footer{
     background-color: #333;
@@ -108,6 +112,9 @@ footer p{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .weather p{
+        margin-right: 0;
     }
     header{
         justify-content: space-between;
