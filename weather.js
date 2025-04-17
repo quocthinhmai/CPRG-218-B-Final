@@ -3,6 +3,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=cancun&appid=02eb660016
 .then(data =>{
     console.log(data);
     console.log(data.main.temp);
+    icon.src = "http://openweathermap.org/img/wn/"+ data.weather[0].icon + "@2x.png";
     temperature.textContent = "Cancún: "+ data.main.temp +"\u00b0C";
     feelslike.textContent = "Feels Like: " + data.main.feels_like +"\u00b0C";
 }); 
