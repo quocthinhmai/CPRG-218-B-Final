@@ -3,7 +3,7 @@
     padding: 1rem;
     width: 100%;
     height: 70vh;
-    background-image: url('/CPRG-218-B-Final//Media/hero_image.webp');
+    background-image: url('/CPRG-218-B-Final/Media/hero_image.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,13 +77,17 @@
     display: grid;
     grid-template-columns: 1fr;
 }
-#home button{
+
+.gallery figcaption{
+    display: flex;
+    flex-direction: column;
+}
+
+#home .homecontainer .gallery figcaption a{
     background-color: white;
     color: #333;
     padding: 1rem;
-    border-radius: 0.5rem;
     margin: 1rem;
-    width: 50%;
 }
 
 /* Testimonial Homepage */
@@ -122,11 +126,14 @@
     color: #ffffff;
     border: none;
     font-size: 100%;
+    display: flex;
+    justify-content: center;
 }
 .calltoaction:hover{
     background-color: #246095;
     color: white;
 }
+
 @media only screen and (min-width:768px){
     #moment .gallerycontainer{
         grid-template-columns: repeat(2,1fr);

@@ -1,0 +1,53 @@
+/* hero section */
+.hero{
+    padding: 1rem;
+    width: 100%;
+    height: 70vh;
+    background-image: url('/CPRG-218-B-Final/Media/reviewheader.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display:flex;
+    align-items:center;
+}
+.hero .textcontent {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    text-align: center;
+}
+
+/*main Review section*/
+#reviews{
+    margin: 3rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridreviews{
+    height: 100%;
+    margin: 0;
+    border: solid 1px #246095;
+}
+
+.gridreviews h2{
+    text-align: left;
+    background-color: #246095;
+    color: white;
+    padding: 1rem 1rem 1rem 2rem;
+    
+}
+
+.gridreviews p{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#note{
+    text-align: center;
+    margin: 5rem;
+}
